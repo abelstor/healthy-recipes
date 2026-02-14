@@ -39,4 +39,51 @@ ul {
   list-style: none;
 }
 
+/* =============== Navbar =============== */
 
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--soft_almond);
+  line-height: 0;
+  height: 4rem;
+  padding: 0 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__brand {
+  content: "";
+}
+
+.header__brand--logo {
+  height: 50px;
+}
+
+.header__nav {
+  content: "";
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.header__nav-item {
+  content: "";
+}
+
+.header__nav-link {
+  color: var(--secondary);
+  font-family: var(--secondary-font);
+  transition: color 0.3s ease;
+}
+
+.header__nav-link--active {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-radius: 5px;
+  padding: 16px;
+}
