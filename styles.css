@@ -110,6 +110,26 @@ ul {
   text-shadow: 0 24px 24px rgba(53, 53, 53, 0.75);
 }
 
+.hero__button {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--soft_almond);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: fit-content;
+}
+
+.hero__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .hero__description {
   background-color: var(--secondary);
   text-align: center;
@@ -127,3 +147,35 @@ ul {
   font-style: italic;
   font-weight: 400;
 }
+
+/* @media (max-width: 768px) {
+  display: none;
+} */
+
+/* &:hover {
+  color: darken($color: white, $amount: 40);
+  font-weight: bold;
+} */
+
+/* @media (max-width: 768px) {
+  justify-content: center;
+  padding: 0 1rem;
+} */
+
+/* @media (max-width: 768px) {
+  font-size: 2.125rem;
+  padding: 0.5rem;
+} */
+
+/* @media (max-width: 768px) {
+  font-size: 3.125rem;
+} */
+
+/* .hero__image {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    height: 100vh;
+    object-fit: cover;
+  }
+} */
