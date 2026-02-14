@@ -87,3 +87,43 @@ ul {
   border-radius: 5px;
   padding: 16px;
 }
+
+/* =============== Hero section =============== */
+
+.hero__content {
+  height: calc(100vh - 4rem);
+  background-image:
+    linear-gradient(115deg, rgba(190, 136, 206, 0.4)), url(./assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__title {
+  color: var(--primary);
+  font-family: var(--secondary-font);
+  font-size: 4.35rem;
+  text-shadow: 0 24px 24px rgba(53, 53, 53, 0.75);
+}
+
+.hero__description {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 5.5rem;
+  font-size: 1.55rem;
+}
+
+.hero__description--subtitle {
+  color: var(--tertiary);
+  margin-bottom: 2rem;
+}
+
+.hero__description p {
+  color: var(--soft_almond);
+  font-style: italic;
+  font-weight: 400;
+}
