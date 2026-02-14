@@ -1,0 +1,42 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  /* Colors */
+  --primary: #f9f9f9;
+  --secondary: #8d0606;
+  --tertiary: #e5e5e5;
+  --dark_grey: #363636;
+  --light_grey: #808080;
+  --soft_olive: #636b2f;
+  --soft_almond: #eed9c4;
+
+  /* Fonts */
+  --primary-font: "Source Sans 3", sans-serif;
+  --secondary-font: "Exo 2", sans-serif;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--arena-clara);
+  color: var(--tierra-oscura);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
