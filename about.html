@@ -12,20 +12,20 @@
     <header class="header">
         <div class="header__content">
             <div class="header__brand">
-                <a href="#home">
+                <a href="./hero.html">
                     <img class="header__brand--logo" src="./assets/logo.png" alt="logo" />
                 </a>
             </div>
             <nav id="navbar" class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="#about">ABOUT</a>
+                        <a class="header__nav-link" href="./about.html">ABOUT</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-link header__nav-link--active" href="#recipes">RECIPES</a>
+                        <a class="header__nav-link header__nav-link--active" href="./recipes.html">RECIPES</a>
                     </li>
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="#contact">CONTACT</a>
+                        <a class="header__nav-link" href="./contact.html">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -35,23 +35,27 @@
 
     <main class="main">
         <section id="about__section">
-            <h3 class="about__title">Who we are</h3>
-            <p class="about__descripcion">Get to know the community behind the initiative!</p>
-            <div class="about__team">
-                <div class="about__person">
-                    <img class="about__person-image" src={roberta} alt="team" />
-                    <span class="about__person-name">Roberta</span>
-                    <span class="about__person-rol">Contents</span>
+            <div class="about__content">
+                <div class="about__header">
+                    <h3 class="about__title">Who we are</h3>
+                    <p class="about__description">Get to know the community behind the initiative!</p>
                 </div>
-                <div class="about__person">
-                    <img class="about__person-image" src={marcela} alt="team" />
-                    <span class="about__person-name">Marcela</span>
-                    <span class="about__person-rol">Chef</span>
-                </div>
-                <div class="about__person">
-                    <img class="about__person-image" src={andrea} alt="team" />
-                    <span class="about__person-name">Andrea</span>
-                    <span class="about__person-rol">Small producer</span>
+                <div class="about__body">
+                    <div class="about__person">
+                        <img class="about__person-image" src="./assets/people/marcela.jpg" alt="team" />
+                        <span class="about__person-name">Roberta</span>
+                        <span class="about__person-rol">Contents</span>
+                    </div>
+                    <div class="about__person">
+                        <img class="about__person-image" src="./assets/people/roberta.jpg" alt="team" />
+                        <span class="about__person-name">Marcela</span>
+                        <span class="about__person-rol">Chef</span>
+                    </div>
+                    <div class="about__person">
+                        <img class="about__person-image" src="./assets/people/andrea.jpg" alt="team" />
+                        <span class="about__person-name">Andrea</span>
+                        <span class="about__person-rol">Small producer</span>
+                    </div>
                 </div>
             </div>
         </section>

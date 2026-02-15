@@ -1,5 +1,5 @@
 /* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   /* Colors */
@@ -8,10 +8,11 @@
   --tertiary: #e5e5e5;
   --dark_grey: #363636;
   --light_grey: #808080;
-  --soft_olive: #636b2f;
-  --soft_almond: #eed9c4;
+  --soft_beige: #dcc8b4;
+  /* --soft_almond: #eed9c4; */
 
   /* Fonts */
+  --main-font: "Pacifico", cursive;
   --primary-font: "Source Sans 3", sans-serif;
   --secondary-font: "Exo 2", sans-serif;
 }
@@ -45,7 +46,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--soft_almond);
+  background-color: var(--soft_beige);
   line-height: 0;
   height: 4rem;
   padding: 0 1rem;
@@ -111,7 +112,7 @@ ul {
 /* =============== Hero section =============== */
 
 .hero__content {
-  height: calc(100vh - 4rem);
+  height: calc(100dvh - 4rem);
   background-image:
     linear-gradient(115deg, rgba(190, 136, 206, 0.4)), url(./assets/banner.jpg);
   background-size: cover;
@@ -125,7 +126,8 @@ ul {
 
 .hero__title {
   color: var(--primary);
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
+  font-weight: 400;
   font-size: 4.35rem;
   text-shadow: 0 24px 24px rgba(53, 53, 53, 0.75);
 }
@@ -133,7 +135,7 @@ ul {
 .hero__button {
   display: inline-block;
   background-color: var(--secondary);
-  color: var(--soft_almond);
+  color: var(--soft_beige);
   padding: 1rem 2rem;
   border-radius: 5px;
   font-weight: 700;
@@ -163,9 +165,69 @@ ul {
 }
 
 .hero__description p {
-  color: var(--soft_almond);
+  color: var(--soft_beige);
   font-style: italic;
   font-weight: 400;
+}
+
+/* =============== About section =============== */
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100dvh - 4rem);
+  background-color: var(--tertiary);
+}
+
+.about__header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about__title {
+  color: var(--secondary);
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+}
+
+.about__description {
+  color: var(--dark_grey);
+  font-size: 1.5rem;
+}
+
+.about__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+  padding: 0 4.5rem;
+  height: 75%;
+}
+
+.about__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__person-image {
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+}
+
+.about__person-name {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--secondary);
+  font-family: var(--main-font);
+}
+
+.about__person-rol {
+  font-family: var(--secondary-font);
+  color: var(--dark_grey);
 }
 
 /* @media (max-width: 768px) {
