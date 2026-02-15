@@ -48,7 +48,7 @@ ul {
   background-color: var(--soft_almond);
   line-height: 0;
   height: 4rem;
-  padding: 0 4rem;
+  padding: 0 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -68,7 +68,27 @@ ul {
 
 .header__nav-list {
   display: flex;
+  padding-right: 3rem;
   gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .header__nav-list {
+    display: none;
+  }
+}
+
+.header__menu-button {
+  color: var(--secondary);
+  letter-spacing: -5px;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
 }
 
 .header__nav-item {
