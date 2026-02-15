@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Recipes - HERO</title>
+    <title>Healthy Recipes - ABOUT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,7 +19,7 @@
             <nav id="navbar" class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="./about.html">ABOUT</a>
+                        <a class="header__nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="header__nav-item">
                         <a class="header__nav-link header__nav-link--active" href="#recipes">RECIPES</a>
@@ -34,15 +34,25 @@
     </header>
 
     <main class="main">
-        <section id="hero-section">
-            <div class="hero__content">
-                <h1 class="hero__title">Re-Make better use of food!</h1>
-                <div><a href="#recipes" class="hero__button">Taste healthy recipes</a></div>
-            </div>
-            <div class="hero__description">
-                <h2 class="hero__description--subtitle">Prescribing to save money and improve health</h2>
-                <p>Our recipes help you make the most of your food, save money, and boost your health with
-                    wholesome, nutritious ingredients!</p>
+        <section id="about__section">
+            <h3 class="about__title">Who we are</h3>
+            <p class="about__descripcion">Get to know the community behind the initiative!</p>
+            <div class="about__team">
+                <div class="about__person">
+                    <img class="about__person-image" src={roberta} alt="team" />
+                    <span class="about__person-name">Roberta</span>
+                    <span class="about__person-rol">Contents</span>
+                </div>
+                <div class="about__person">
+                    <img class="about__person-image" src={marcela} alt="team" />
+                    <span class="about__person-name">Marcela</span>
+                    <span class="about__person-rol">Chef</span>
+                </div>
+                <div class="about__person">
+                    <img class="about__person-image" src={andrea} alt="team" />
+                    <span class="about__person-name">Andrea</span>
+                    <span class="about__person-rol">Small producer</span>
+                </div>
             </div>
         </section>
     </main>
