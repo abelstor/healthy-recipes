@@ -129,6 +129,7 @@ ul {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 4.35rem;
+  padding-bottom: 2rem;
   text-shadow: 0 24px 24px rgba(53, 53, 53, 0.75);
 }
 
@@ -170,6 +171,12 @@ ul {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .hero__description {
+    padding: 5.5rem 2rem;
+  }
+}
+
 /* =============== About section =============== */
 
 .about__content {
@@ -198,11 +205,33 @@ ul {
 
 .about__body {
   display: grid;
+  gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   width: 100%;
   padding: 0 4.5rem;
   height: 75%;
+}
+
+@media (max-width: 768px) {
+  .about__header{
+    padding: 0 1.5rem 2.5rem;
+  }
+
+  .about__content {
+    height: 100%;
+  }
+
+  .about__body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .about__person-image {
+    height: 180px;
+    width: 180px;
+  }
 }
 
 .about__person {
@@ -215,6 +244,12 @@ ul {
   border-radius: 50%;
   height: 240px;
   width: 240px;
+}
+
+.about__person-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .about__person-name {
