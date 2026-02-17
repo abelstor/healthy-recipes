@@ -61,6 +61,7 @@ ul {
 
 .header__brand--logo {
   height: 50px;
+  object-fit: contain;
 }
 
 .header__nav {
@@ -214,7 +215,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .about__header{
+  .about__header {
     padding: 0 1.5rem 2.5rem;
   }
 
@@ -244,6 +245,10 @@ ul {
   border-radius: 50%;
   height: 240px;
   width: 240px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: fit-content;
 }
 
 .about__person-image:hover {
@@ -265,34 +270,91 @@ ul {
   color: var(--dark_grey);
 }
 
-/* @media (max-width: 768px) {
-  display: none;
-} */
+/* =============== Recipes section =============== */
 
-/* &:hover {
-  color: darken($color: white, $amount: 40);
-  font-weight: bold;
-} */
+.recipes__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: var(--tertiary);
+}
 
-/* @media (max-width: 768px) {
+.recipes__header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.recipes__title {
+  color: var(--secondary);
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+}
+
+.recipes__body {
+  display: grid;
+  gap: 3.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   justify-content: center;
-  padding: 0 1rem;
-} */
+  width: 90%;
+  padding: 3.5rem;
+}
 
-/* @media (max-width: 768px) {
-  font-size: 2.125rem;
-  padding: 0.5rem;
-} */
+.recipe__card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  border-radius: 7px;
+  height: 410px;
+}
+.recipe__card-image {
+  border-radius: 7px 7px 0 0;
+  object-fit: contain;
+}
 
-/* @media (max-width: 768px) {
-  font-size: 3.125rem;
-} */
+.recipe__card-item {
+  padding: 2rem;
+}
+.recipe__card-title {
+  color: var(--secondary);
+  font-size: 1.3rem;
+  font-family: var(--secondary-font);
+  padding-bottom: 0.5rem;
+}
+.recipe__card-description {
+  padding-bottom: 1.5rem;
+  color: var(--dark_grey);
+}
+.recipe__card-button {
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: fit-content;
+  /* display: inline-block; */
+}
 
-/* .hero__image {
-  width: 100%;
+.recipe__card-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-  @media (max-width: 768px) {
-    height: 100vh;
-    object-fit: cover;
+@media (max-width: 768px) {
+  .recipes__body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
-} */
+
+  .recipe__card {
+    height: 440px;
+  }
+}
