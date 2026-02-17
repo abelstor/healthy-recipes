@@ -113,6 +113,7 @@ ul {
 /* =============== Hero section =============== */
 
 .hero__content {
+  position: relative;
   height: calc(100dvh - 4rem);
   background-image:
     linear-gradient(115deg, rgba(190, 136, 206, 0.4)), url(./assets/banner.jpg);
@@ -130,7 +131,7 @@ ul {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 4.35rem;
-  padding-bottom: 2rem;
+  padding-bottom: 9rem;
   text-shadow: 0 24px 24px rgba(53, 53, 53, 0.75);
 }
 
@@ -374,6 +375,103 @@ ul {
 
   .recipe__card {
     height: 440px;
+  }
+}
+
+/* =============== Contact section =============== */
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100dvh - 4rem);
+  background-color: var(--tertiary);
+}
+
+.contact__header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact__title {
+  color: var(--secondary);
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+}
+
+.contact__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 380px;
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  color: var(--dark_grey);
+}
+
+.form-group__textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group__input,
+.form-group__textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--arena-clara);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group__input:focus,
+.form-group__textarea:focus {
+  outline: none;
+  border-color: var(--beige-crema);
+}
+
+.button--submit {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: fit-content;
+  display: inline-block;
+}
+
+.button--submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact__form {
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    padding: 0 1rem;
+    display: block;
   }
 }
 
