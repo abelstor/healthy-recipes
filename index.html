@@ -16,7 +16,7 @@
                     <img class="header__brand--logo" src="./assets/logo.png" alt="logo" />
                 </a>
             </div>
-            <nav id="navbar" class="header__nav">
+            <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="./about.html">ABOUT</a>
@@ -29,7 +29,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__menu-button">☰☰</div>
+            <div id="toggleButton" class="header__menu-button">☰☰</div>
         </div>
     </header>
 
@@ -46,6 +46,22 @@
             </div>
         </section>
     </main>
+
+    <div id="floatingElement" class="floating-element">
+        <nav class="header__nav--float">
+            <ul class="header__nav-list--float">
+                <li class="header__nav-item--float">
+                    <a class="header__nav-link--float" href="./about.html">ABOUT</a>
+                </li>
+                <li class="header__nav-item--float">
+                    <a class="header__nav-link--float" href="./recipes.html">RECIPES</a>
+                </li>
+                <li class="header__nav-item--float">
+                    <a class="header__nav-link--float" href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <footer class="footer">
         <div class="footer__content">
@@ -69,6 +85,8 @@
             </ul> -->
         </div>
     </footer>
+
+    <script src="./app.js"></script>
 
 </body>
 
